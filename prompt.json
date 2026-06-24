@@ -1,0 +1,227 @@
+{
+    "prompt_name": "Modern Dark-Purple Developer SaaS Website Inspired by Sentry",
+    "reference": {
+        "url": "https://sentry.io/welcome/",
+        "source_note": "Use the Sentry welcome page only as visual inspiration: dark developer-first SaaS aesthetic, code/UI mockups, product cards, logo wall, testimonials, and strong CTA structure. Do not copy Sentry branding, logo, exact copy, screenshots, or proprietary assets. "
+    },
+    "main_prompt": "Design and build a modern, premium SaaS landing page with a dark-purple developer-tech theme inspired by the visual energy of Sentry's homepage. The website should feel sharp, cinematic, technical, and high-conversion. Use a deep purple-black background, layered gradients, glowing accents, animated code panels, terminal-style cards, dashboard mockups, subtle noise texture, grid overlays, and smooth scroll-based motion effects. The design must look original, not a clone, while capturing the same polished developer-tool atmosphere.",
+    "brand_direction": {
+        "style": "Modern developer SaaS, dark mode, premium, technical, confident, slightly playful but professional",
+        "mood": "Fast, intelligent, reliable, futuristic, product-led",
+        "avoid": [
+            "Do not copy Sentry logo",
+            "Do not copy Sentry exact layout",
+            "Do not reuse Sentry copywriting",
+            "Do not use Sentry screenshots",
+            "Do not make it look like a fake Sentry website"
+        ]
+    },
+    "design_system": {
+        "color_palette": {
+            "background_primary": "#12091F",
+            "background_secondary": "#1B102B",
+            "surface_card": "#241433",
+            "surface_card_alt": "#2E1A43",
+            "purple_primary": "#7C3AED",
+            "purple_glow": "#A855F7",
+            "pink_accent": "#EC4899",
+            "orange_accent": "#F97316",
+            "lime_accent": "#A3E635",
+            "text_primary": "#F8F5FF",
+            "text_secondary": "#C9BFE0",
+            "text_muted": "#8F82A8",
+            "border_subtle": "rgba(255,255,255,0.12)"
+        },
+        "typography": {
+            "heading_font": "Modern geometric sans-serif such as Inter, Geist, or Satoshi",
+            "body_font": "Inter or system sans-serif",
+            "code_font": "JetBrains Mono, Fira Code, or IBM Plex Mono",
+            "heading_style": "Large compressed-feeling hero typography, tight tracking, bold weight, strong contrast",
+            "body_style": "Clear, calm, developer-friendly, short paragraphs"
+        },
+        "layout": {
+            "max_width": "1200px to 1320px",
+            "grid": "12-column responsive grid",
+            "spacing": "Generous vertical spacing with compact technical cards",
+            "border_radius": "16px to 28px",
+            "card_style": "Dark translucent surfaces, soft inner borders, gradient strokes, subtle glow on hover"
+        },
+        "effects": {
+            "background": [
+                "Radial purple glow behind hero",
+                "Subtle animated grid pattern",
+                "Noise texture overlay",
+                "Soft aurora gradients"
+            ],
+            "interactive": [
+                "Hover glow on buttons and cards",
+                "Magnetic CTA button feel",
+                "Animated terminal cursor",
+                "Code lines fading in",
+                "Dashboard panels sliding gently on scroll",
+                "Logo wall marquee animation"
+            ],
+            "motion_principles": "Smooth, restrained, premium. Use motion to guide attention, not distract."
+        }
+    },
+    "page_structure": [
+        {
+            "section": "Navigation",
+            "requirements": [
+                "Sticky top navigation with translucent dark-purple blur",
+                "Left logo placeholder",
+                "Links: Platform, Solutions, Resources, Pricing",
+                "Right buttons: Sign In, Get Demo, Get Started",
+                "Use subtle dropdown-ready styling"
+            ]
+        },
+        {
+            "section": "Hero",
+            "requirements": [
+                "Large headline with developer-focused messaging",
+                "Short supporting paragraph",
+                "Primary CTA and secondary CTA",
+                "Animated terminal or product dashboard mockup on the right",
+                "Background radial glow and subtle grid",
+                "Add small pill label above headline such as 'Developer-first platform'"
+            ],
+            "sample_copy": {
+                "eyebrow": "Developer-first intelligence platform",
+                "headline": "Find the signal. Fix what matters. Ship faster.",
+                "subheadline": "A modern command center for teams that need full context across errors, performance, users, releases, and AI-powered debugging.",
+                "primary_cta": "Get Started",
+                "secondary_cta": "View Live Demo"
+            }
+        },
+        {
+            "section": "Logo Wall",
+            "requirements": [
+                "Horizontal marquee of fictional customer logos",
+                "Use monochrome light-purple logos",
+                "Add text: 'Trusted by fast-moving engineering teams'"
+            ]
+        },
+        {
+            "section": "Feature Cards",
+            "requirements": [
+                "Create 4 premium cards in a responsive grid",
+                "Each card should include a small icon, heading, short copy, and mini UI visual",
+                "Use developer product concepts such as monitoring, AI insights, traces, release context"
+            ],
+            "cards": [
+                {
+                    "title": "Monitor in minutes",
+                    "description": "Drop in a lightweight SDK and start seeing meaningful issues without complex setup."
+                },
+                {
+                    "title": "Root cause faster",
+                    "description": "Connect logs, traces, sessions, and releases into one clear debugging path."
+                },
+                {
+                    "title": "Prevent regressions",
+                    "description": "Surface risky changes before they become production incidents."
+                },
+                {
+                    "title": "Stay in flow",
+                    "description": "Bring context into your workflow through Git, chat, and issue tracking integrations."
+                }
+            ]
+        },
+        {
+            "section": "Connected Product Story",
+            "requirements": [
+                "Create a wide dark dashboard section showing Issue → Context → Fix",
+                "Use three connected panels with animated lines",
+                "Panel 1: Issue details",
+                "Panel 2: Trace/session context",
+                "Panel 3: Suggested fix/code diff",
+                "Add glowing connector paths"
+            ]
+        },
+        {
+            "section": "AI Debugging Section",
+            "requirements": [
+                "Split layout with copy on left and AI/code diff visual on right",
+                "Use purple and lime highlights for suggested fix states",
+                "Include small status chips such as 'Root cause detected', 'Patch ready', 'Owner mapped'"
+            ]
+        },
+        {
+            "section": "Testimonials",
+            "requirements": [
+                "Three testimonial cards with fictional names and companies",
+                "Premium quote styling",
+                "Dark cards with subtle gradient borders"
+            ]
+        },
+        {
+            "section": "Developer Install Section",
+            "requirements": [
+                "Tabbed code block with frameworks: Next.js, React, Node.js, Python",
+                "Terminal-style UI",
+                "Copy button interaction",
+                "Monospace font",
+                "Animated command reveal"
+            ]
+        },
+        {
+            "section": "Final CTA",
+            "requirements": [
+                "Large dark-purple gradient panel",
+                "Strong final headline",
+                "Two CTA buttons",
+                "Subtle glow and abstract shapes"
+            ],
+            "sample_copy": {
+                "headline": "Start building with full context.",
+                "subheadline": "Give your team the visibility to fix faster and ship with confidence.",
+                "primary_cta": "Start Free",
+                "secondary_cta": "Book a Demo"
+            }
+        }
+    ],
+    "component_requirements": {
+        "buttons": {
+            "primary": "Bright purple gradient button with soft glow, rounded pill shape, hover lift",
+            "secondary": "Transparent dark button with thin purple border and hover background"
+        },
+        "cards": {
+            "style": "Glassmorphism dark cards with gradient stroke, inner shadow, and hover glow",
+            "hover": "Slight translateY, border brightening, glow expansion"
+        },
+        "code_blocks": {
+            "style": "Terminal window with top-left control dots, syntax highlighting, blinking cursor",
+            "background": "#0B0614",
+            "border": "1px solid rgba(255,255,255,0.12)"
+        },
+        "icons": {
+            "style": "Thin-line technical icons, rounded, purple/lime accents",
+            "avoid": "Cartoonish or generic stock icons"
+        }
+    },
+    "technical_instructions": {
+        "framework": "Next.js or React",
+        "styling": "Tailwind CSS preferred",
+        "animation": "Framer Motion or CSS animations",
+        "responsive": "Must work beautifully on desktop, tablet, and mobile",
+        "performance": "Use lightweight effects, avoid heavy 3D unless optimized",
+        "accessibility": [
+            "Maintain strong color contrast",
+            "Use semantic HTML",
+            "Keyboard-accessible navigation and buttons",
+            "Respect reduced-motion preferences"
+        ]
+    },
+    "negative_prompt": [
+        "No copied Sentry branding",
+        "No exact Sentry text",
+        "No real Sentry customer logos",
+        "No generic corporate blue theme",
+        "No flat boring SaaS template",
+        "No overly bright neon cyberpunk look",
+        "No cluttered layout",
+        "No low-contrast text",
+        "No stock-photo-heavy design"
+    ],
+    "final_output_expectation": "Generate a complete, polished, production-ready landing page with a dark-purple Sentry-inspired developer SaaS aesthetic, original branding, strong visual hierarchy, premium animations, responsive layout, and reusable design-system components."
+}

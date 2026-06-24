@@ -1,4 +1,4 @@
-# Once UI for Next.js
+# Bir Ali Preschool website, using Once UI for Next.js
 
 A design system for indie builders, startups and freelancers. Once UI combines the simplicity of low-code with the power of code: write 70% less compared to shadcn + Tailwind. Includes 100+ advanced, open-source components.
 
