@@ -468,7 +468,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Alam-Budiman.png",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Alam-Budiman.png"],
-    year: 2024,
+    year: 2026,
   },
   {
     name: "Ara Damansara",
@@ -488,7 +488,7 @@ export const branches = [
   },
   {
     name: "Bandar Baru Bangi",
-    slug: "bangi",
+    slug: "bandar-baru-bangi",
     address: "B-1-25, Bangi Gateway Streetmall, Jalan Gerbang Wawasan 1, Bangi Gateway, Seksyen 15, 43650 Bandar Baru Bangi, Selangor",
     state: "Selangor",
     phone: "014 - 593 7393",
@@ -522,7 +522,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Bandar-Baru-Nilai.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Bandar-Baru-Nilai.jpg", "/images/branches/Bir-Ali-Whatsapp-Quba-Bandar-Baru-Nilai.jpg", "/images/branches/Bir-Ali-Whatsapp-Quba-Bandar-Baru-Nilai.jpg"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Bandar Baru Uda",
@@ -538,7 +538,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Bandar-Baru-Uda.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Bandar-Baru-Uda.jpg"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Bandar Bukit Raja",
@@ -587,6 +587,22 @@ export const branches = [
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Bandar-Putera-2.png",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Bandar-Putera-2.png"],
     year: 2024,
+  },
+  {
+    name: "Bandar Seri Coalfields",
+    slug: "bandar-seri-coalfields",
+    address: "No. 26-1 Jalan BSC 2b/2, Bandar Seri Coalfields, Sungai Buloh, Selangor Darul Ehsan, 47000",
+    state: "Selangor",
+    phone: "011-6821 1190",
+    social: [
+      { platform: "facebook", url: "https://www.facebook.com/profile.php?id=100067903058025" },
+      { platform: "instagram", url: "https://www.instagram.com/biralibandarsericoalfields" },
+      { platform: "threads", url: "https://www.threads.com/biralibandarsericoalfields" },
+      { platform: "tiktok", url: "" },
+    ],
+    preview_photo: "/images/branches/Tadika Bir Ali Bandar Seri Coalfields.jpg",
+    photos: [],
+    year: 2027,
   },
   {
     name: "Bandar Seri Putra",
@@ -698,7 +714,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Batu-Pahat.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Batu-Pahat.jpg"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Bertam",
@@ -767,7 +783,7 @@ export const branches = [
   {
     name: "Cybersouth",
     slug: "cybersouth",
-    address: "Cybersouth, Selangor, Malaysia",
+    address: "No. 3A -1, Park Place 1, CyberSouth, 43800 Dengkil, Selangor",
     state: "Selangor",
     phone: "018 - 7788 920",
     social: [
@@ -776,9 +792,9 @@ export const branches = [
       { platform: "threads", url: "https://www.threads.com/@biralicybersouth" },
       { platform: "tiktok", url: "https://www.tiktok.com/@biralicybersouth" },
     ],
-    preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Cybersouth.png",
+    preview_photo: "/images/branches/Tadika Bir Ali Cybersouth Dengkil.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Cybersouth.png"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Dato Keramat",
@@ -1058,7 +1074,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Saujana-Utama.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Saujana-Utama.jpg"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Saujana Rawang",
@@ -1134,7 +1150,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Serenia-City.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Serenia-City.jpg"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Seri Alam",
@@ -1151,6 +1167,38 @@ export const branches = [
     preview_photo: "/images/branches/Bir-Ali-Seri-Alam.jpg",
     photos: ["/images/branches/Bir-Ali-Seri-Alam.jpg"],
     year: 2024,
+  },
+  {
+    name: "Seri Iskandar",
+    slug: "seri-iskandar",
+    address: "Seri Iskandar, Perak",
+    state: "Perak",
+    phone: "011 - 6544 9263",
+    social: [
+      { platform: "facebook", url: "" },
+      { platform: "instagram", url: "" },
+      { platform: "threads", url: "" },
+      { platform: "tiktok", url: "" },
+    ],
+    preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
+    photos: ["/images/branches/Bir-Ali-Default-Branch.jpg"],
+    year: 2027,
+  },
+  {
+    name: "Setia Impian",
+    slug: "setia-impian",
+    address: "Setia Impian, Setia Alam",
+    state: "Selangor",
+    phone: "017 - 9292 060",
+    social: [
+      { platform: "facebook", url: "https://www.facebook.com/biralisetiaimpian" },
+      { platform: "instagram", url: "https://www.instagram.com/birali.setiaimpian" },
+      { platform: "threads", url: "" },
+      { platform: "tiktok", url: "" },
+    ],
+    preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
+    photos: ["/images/branches/Bir-Ali-Default-Branch.jpg"],
+    year: 2027,
   },
   {
     name: "Slim River",
@@ -1182,7 +1230,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Tadika Bir Ali Sri Andalas.webp",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Sri-Andalas.jpg"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Taman Medan",
@@ -1198,7 +1246,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Taman-Medan-PJ.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Taman-Medan-PJ.jpg"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Tanjung Rambutan",
@@ -1230,7 +1278,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
     photos: ["/images/branches/Bir-Ali-Default-Branch.jpg"],
-    year: 2024,
+    year: 2027,
   },
   {
     name: "The Atmosphere",
@@ -1246,7 +1294,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-The-Atmosphere-Seri-Kembangan.png",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-The-Atmosphere-Seri-Kembangan.png"],
-    year: 2024,
+    year: 2026,
   },
   {
     name: "Tropicana Damansara",
@@ -1262,12 +1310,12 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-Tropicana-Damansara.png",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Tropicana-Damansara.png"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "TTDI Jaya",
     slug: "ttdijaya",
-    address: "TTDI Jaya, Selangor, Malaysia",
+    address: "4-1 & 4-2, Jalan Opera L U2/L, Taman TTDI Jaya, 40150 Shah Alam, Selangor",
     state: "Selangor",
     phone: "016 - 7146 146",
     social: [
@@ -1276,9 +1324,19 @@ export const branches = [
       { platform: "threads", url: "https://www.threads.com/@biralittdijaya" },
       { platform: "tiktok", url: "https://www.tiktok.com/@biralittdijaya" },
     ],
-    preview_photo: "/images/branches/Bir-Ali-Whatsapp-Quba-TTDI-Jaya.jpg",
-    photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-TTDI-Jaya.jpg"],
-    year: 2024,
+    preview_photo: "/images/branches/Tadika Bir Ali TTDI Jaya.jpg",
+    photos: [
+      "/images/branches/Tadika Bir Ali TTDI Jaya 1.jpg",
+      "/images/branches/Tadika Bir Ali TTDI Jaya 2.jpg",
+      "/images/branches/Tadika Bir Ali TTDI Jaya 3.jpg",
+      "/images/branches/Tadika Bir Ali TTDI Jaya 4.jpg",
+      "/images/branches/Tadika Bir Ali TTDI Jaya 5.jpg",
+      "/images/branches/Tadika Bir Ali TTDI Jaya 6.jpg",
+      "/images/branches/Tadika Bir Ali TTDI Jaya 7.jpg",
+      "/images/branches/Tadika Bir Ali TTDI Jaya 8.jpg",
+      "/images/branches/Tadika Bir Ali TTDI Jaya 9.jpg",
+      ],
+    year: 2025,
   },
   {
     name: "U12, Shah Alam",
@@ -1294,7 +1352,7 @@ export const branches = [
     ],
     preview_photo: "/images/branches/Tadika Bir Ali U12 Shah Alam.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-U12-Shah-Alam.jpg"],
-    year: 2024,
+    year: 2025,
   },
   {
     name: "Vista Valley",
@@ -1343,39 +1401,7 @@ export const branches = [
     preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
     photos: ["/images/branches/Bir-Ali-Default-Branch.jpg"],
     year: 2027,
-  },
-  {
-    name: "Seri Iskandar",
-    slug: "seri-iskandar",
-    address: "Seri Iskandar, Perak",
-    state: "Perak",
-    phone: "011 - 6544 9263",
-    social: [
-      { platform: "facebook", url: "" },
-      { platform: "instagram", url: "" },
-      { platform: "threads", url: "" },
-      { platform: "tiktok", url: "" },
-    ],
-    preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
-    photos: ["/images/branches/Bir-Ali-Default-Branch.jpg"],
-    year: 2027,
-  },
-  {
-    name: "Setia Impian",
-    slug: "setia-impian",
-    address: "Setia Impian, Setia Alam",
-    state: "Selangor",
-    phone: "017 - 9292 060",
-    social: [
-      { platform: "facebook", url: "https://www.facebook.com/biralisetiaimpian" },
-      { platform: "instagram", url: "https://www.instagram.com/birali.setiaimpian" },
-      { platform: "threads", url: "" },
-      { platform: "tiktok", url: "" },
-    ],
-    preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
-    photos: ["/images/branches/Bir-Ali-Default-Branch.jpg"],
-    year: 2027,
-  },
+  }
 ];
 const testimonialBranches = [
   {
