@@ -19,8 +19,48 @@ export const navItems = [
 
 export const redirects = [
   {
-    source: "/location",
-    destination: "https://www.google.com/maps/search/?api=1&query=Tadika%20Bir%20Ali",
+    source: "/ads",
+    destination: "https://ads.birali.my",
+    permanent: true,
+  },
+  {
+    source: "/campus",
+    destination: "https://birali.my/branches",
+    permanent: true,
+  },
+  {
+    source: "/elmina",
+    destination: "https://ads.birali.my/?ba=elmina",
+    permanent: true,
+  },
+  {
+    source: "/pakej",
+    destination: "https://wp.birali.my/yuran-tadika-bir-ali/",
+    permanent: true,
+  },
+  {
+    source: "/en/about",
+    destination: "/about",
+    permanent: true,
+  },
+  {
+    source: "/team/ustaz-muhidin-mokter/",
+    destination: "https://wp.birali.my/team/ustaz-muhidin-mokter/",
+    permanent: false,
+  },
+  {
+    source: "/hubungi",
+    destination: "https://wp.birali.my/hubungi",
+    permanent: false,
+  },
+  {
+    source: "/en/contact",
+    destination: "https://wp.birali.my/en/contact",
+    permanent: false,
+  },
+  {
+    source: "/yuran-tadika-bir-ali",
+    destination: "https://wp.birali.my/yuran-tadika-bir-ali/",
     permanent: false,
   },
 ];
