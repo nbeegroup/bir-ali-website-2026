@@ -18,6 +18,6 @@ export type Branch = {
   photos: string[];
   social: Array<{
     platform: string;
-    url: string;
+    url: string | null;
   }>;
 };

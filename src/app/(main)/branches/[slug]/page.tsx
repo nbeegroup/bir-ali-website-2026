@@ -50,6 +50,8 @@ export default async function BranchPage({ params }: BranchPageProps) {
     notFound();
   }
 
+  const socialLinks = branch.social.filter((social) => Boolean(social.url));
+
   return (
     <Column fillWidth>
       <section className="page-hero branch-detail-hero">
@@ -104,11 +106,11 @@ export default async function BranchPage({ params }: BranchPageProps) {
                 All branches
               </Button> */}
             </Row>
-            {branch.social.length > 0 ? (
+            {socialLinks.length > 0 ? (
               <Column gap="12" className="branch-social-block">
                 <Text variant="label-strong-s">Follow this branch</Text>
                 <div className="branch-social-links">
-                  {branch.social.map((social) => {
+                  {socialLinks.map((social) => {
                     const Icon =
                       socialIcons[social.platform.toLowerCase()] ?? HiOutlineExternalLink;
                     const label = getPlatformLabel(social.platform);
@@ -116,11 +118,11 @@ export default async function BranchPage({ params }: BranchPageProps) {
                     return (
                       <a
                         key={social.platform}
-                        href={social.url}
+                        href={social.url || undefined}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="branch-social-link"
-                        aria-label={`Visit ${branch.name} on ${label} (opens in a new tab)`}
+                        aria-label={`Visit Bir Ali ${branch.name} on ${label} (opens in a new tab)`}
                       >
                         <Icon aria-hidden="true" />
                         <span>{label}</span>
@@ -141,7 +143,7 @@ export default async function BranchPage({ params }: BranchPageProps) {
               Branch gallery
             </Text>
             <Heading as="h2" variant="display-strong-s" wrap="balance">
-              A closer look at {branch.name}.
+              A closer look at Bir Ali {branch.name}.
             </Heading>
             <Text as="p" variant="body-default-l" onBackground="neutral-weak">
               Explore the learning spaces and everyday environment at this branch.
@@ -184,20 +186,19 @@ export default async function BranchPage({ params }: BranchPageProps) {
                 Find us
               </Text>
               <Heading as="h2" variant="display-strong-s" wrap="balance">
-                Visit {branch.name}.
+                Visit Bir Ali {branch.name}.
               </Heading>
-              <Text as="p" variant="body-default-l" onBackground="neutral-weak">
-                Google Maps searches for “{branch.location || `Tadika Bir Ali ${branch.name}`}”
-                automatically.
-              </Text>
+              {/* <Text as="p" variant="body-default-l" onBackground="neutral-weak">
+                Google Maps for {branch.location || `Bir Ali ${branch.name}`}.
+              </Text> */}
             </Column>
-            <Text
+            {/* <Text
               variant="body-default-m"
               onBackground="neutral-weak"
               className="branch-map-address"
             >
               {branch.address}
-            </Text>
+            </Text> */}
           </Row>
           <BranchMap branchName={branch.name} location={branch.location} />
         </Column>
