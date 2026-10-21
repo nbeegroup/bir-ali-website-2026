@@ -19,6 +19,11 @@ export const navItems = [
 
 export const redirects = [
   {
+    source: "/en",
+    destination: "/",
+    permanent: true,
+  },
+  {
     source: "/ads",
     destination: "https://ads.birali.my",
     permanent: true,
@@ -67,6 +72,41 @@ export const redirects = [
     source: "/yuran-tadika-bir-ali",
     destination: "https://wp.birali.my/yuran-tadika-bir-ali/",
     permanent: false,
+  },
+  {
+    source: "/log-in",
+    destination: "/",
+    permanent: false,
+  },
+  {
+    source: "/info",
+    destination: "/about",
+    permanent: false,
+  },
+  {
+    source: "/licensing",
+    destination: "https://wp.birali.my/licensing",
+    permanent: true,
+  },
+  {
+    source: "/pendaftaran-uba",
+    destination: "https://wp.birali.my/licensing",
+    permanent: true,
+  },
+  {
+    source: "/terms-conditions",
+    destination: "https://wp.birali.my/terms-conditions",
+    permanent: true,
+  },
+  {
+    source: "/privacy-policy",
+    destination: "https://wp.birali.my/privacy-policy",
+    permanent: true,
+  },
+  {
+    source: "/refund-policy",
+    destination: "https://wp.birali.my/refund-policy",
+    permanent: true,
   },
 ];
 
