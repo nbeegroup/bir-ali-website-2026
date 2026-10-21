@@ -54,6 +54,11 @@ export const redirects = [
     permanent: false,
   },
   {
+    source: "/en/programme",
+    destination: "https://wp.birali.my/en/programme",
+    permanent: false,
+  },
+  {
     source: "/en/contact",
     destination: "https://wp.birali.my/en/contact",
     permanent: false,
