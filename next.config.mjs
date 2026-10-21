@@ -1,5 +1,10 @@
+import { redirects as redirectEntries } from "./src/resources/mockData.js";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return redirectEntries;
+  },
   turbopack: {
     root: new URL(".", import.meta.url).pathname,
   },

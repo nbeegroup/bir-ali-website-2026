@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { navItems, site } from "@/resources/content";
+import { navItems, site } from "@/resources/mockData";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -110,7 +110,12 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
                 key={item.href}
                 href={item.href}
                 onClick={handleNavigation}
-                className={pathname === item.href ? "nav-link active" : "nav-link"}
+                className={
+                  pathname === item.href ||
+                  (item.href !== "/" && pathname.startsWith(`${item.href}/`))
+                    ? "nav-link active"
+                    : "nav-link"
+                }
               >
                 {item.label}
               </Link>

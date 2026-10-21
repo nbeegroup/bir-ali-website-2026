@@ -1,5 +1,5 @@
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://birali.my";
+const baseURL = "https://bir-ali-website-2026.vercel.app";
 
 // metadata for pages
 const meta = {
@@ -8,7 +8,7 @@ const meta = {
     title: "Bir Ali | The Sunnah Preschool",
     description: "Jom Didik Anak Ikut Sunnah.",
     image: "/images/og/home.jpg",
-    canonical: "https://birali.my",
+    canonical: "https://bir-ali-website-2026.vercel.app",
     robots: "index,follow",
     alternates: [{ href: "https://birali.my", hrefLang: "en" }],
   },

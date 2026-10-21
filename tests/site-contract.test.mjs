@@ -6,10 +6,10 @@ import test from "node:test";
 const root = process.cwd();
 const read = (file) => readFileSync(path.join(root, file), "utf8");
 
-test("content resource defines the Bir Ali Preschool brand and required pages", () => {
-  const contentPath = "src/resources/content.tsx";
+test("mock data resource defines the Bir Ali Preschool brand and required pages", () => {
+  const contentPath = "src/resources/mockData.js";
 
-  assert.equal(existsSync(path.join(root, contentPath)), true, "content.tsx should exist");
+  assert.equal(existsSync(path.join(root, contentPath)), true, "mockData.js should exist");
 
   const content = read(contentPath);
   const requiredCopy = ["Bir Ali Preschool", "The Sunnah Preschool", "Jom Didik Anak Ikut Sunnah"];
@@ -52,10 +52,30 @@ test("shared site shell includes scroll-to-top navigation behavior", () => {
   assert.match(shell, /behavior:\s*"smooth"/, "scroll-to-top behavior should be smooth");
 });
 
-test("dark premium styling uses requested brand palette and avoids preschool brightness", () => {
+test("navy styling uses requested brand palette and preserves accessible motion", () => {
   const css = read("src/resources/custom.css");
 
-  assert.match(css, /#23370a/i, "main deep-blue brand color should be defined");
+  assert.match(css, /#000080/i, "main navy background color should be defined");
+  assert.match(
+    css,
+    /--bir-motion-highlight-rgb:\s*125,\s*211,\s*252/i,
+    "cursor motion highlight should be lighter than navy",
+  );
+  assert.match(
+    css,
+    /\.site-shell::before[\s\S]*background-size:\s*28px\s+28px/i,
+    "the light grid should cover the shared site shell",
+  );
+  assert.doesNotMatch(
+    css,
+    /\.hero-section:hover::after/i,
+    "the grid should not brighten only on hero hover",
+  );
+  assert.match(
+    css,
+    /--bir-panel:\s*rgba\(19,\s*48,\s*132,\s*0\.78\)/i,
+    "dark surfaces should use the shared navy panel color",
+  );
   assert.match(css, /#f97316/i, "orange accent color should be defined");
   assert.match(css, /prefers-reduced-motion/, "animations should respect reduced motion");
 });

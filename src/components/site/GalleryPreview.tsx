@@ -3,7 +3,7 @@
 import { Button, Card, Column, Media, Row, Text } from "@once-ui-system/core";
 import { useState } from "react";
 
-import type { ImageItem } from "@/resources/content";
+import type { ImageItem } from "@/resources/data.types";
 
 type GalleryPreviewProps = {
   images: ImageItem[];

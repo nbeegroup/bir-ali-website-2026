@@ -9,11 +9,11 @@ import {
   contact,
   hero,
   homeGallery,
-  pillars,
+  homeSections,
   site,
   stats,
-  testimonials,
-} from "@/resources/content";
+  featuredTestimonials,
+} from "@/resources/mockData";
 
 import { GalleryPreview } from "./GalleryPreview";
 import { SectionHeading } from "./SectionHeading";
@@ -72,21 +72,21 @@ export function HomePage() {
               unoptimized
             />
             <Column gap="8" padding="20" className="floating-note">
-              <Text variant="label-strong-s">Daily rhythm</Text>
+              <Text variant="label-strong-s">{hero.dailyRhythm.label}</Text>
               <Text variant="body-default-s" onBackground="neutral-weak">
-                Adab, discovery, language, practical life, and outdoor calm.
+                {hero.dailyRhythm.description}
               </Text>
             </Column>
           </Column>
         </Row>
       </section>
 
-      <section className="site-section">
+      {/* <section className="site-section">
         <Column maxWidth={88} gap="32" className="reveal-in delay-1">
           <SectionHeading
-            eyebrow="Why families choose us"
-            title="A boutique preschool experience with a stronger inner compass."
-            description="The mock data below will be replaced by resources/content.tsx production content later."
+            eyebrow={homeSections.whyFamilies.eyebrow}
+            title={homeSections.whyFamilies.title}
+            description={homeSections.whyFamilies.description}
           />
           <Grid columns="3" gap="16" m={{ columns: 1 }}>
             {pillars.map((pillar) => (
@@ -104,13 +104,13 @@ export function HomePage() {
             ))}
           </Grid>
         </Column>
-      </section>
+      </section> */}
 
       <section className="site-section compact">
         <Column maxWidth={88} gap="32" className="reveal-in delay-2">
           <SectionHeading
-            eyebrow="Programme model"
-            title="Modern early-years structure, quietly grounded in Sunnah values."
+            eyebrow={homeSections.programme.eyebrow}
+            title={homeSections.programme.title}
           />
           <Grid columns="3" gap="16" m={{ columns: 1 }}>
             {aboutSections.map((section) => (
@@ -139,7 +139,7 @@ export function HomePage() {
               variant="secondary"
               className="secondary-cta"
             >
-              View All Branches
+              {branchesSection.viewAllLabel}
             </Button>
           </Row>
           <Row fillWidth gap="24" className="branches-grid" s={{ direction: "column" }}>
@@ -151,10 +151,10 @@ export function HomePage() {
               />
             </Card>
             <Column flex={1} gap="20" className="branches-stack">
-              {branches.map((branch) => (
+              {branches.slice(0, 7).map((branch) => (
                 <Card
-                  key={branch.id}
-                  href={`/branches/${branch.id}`}
+                  key={branch.slug}
+                  href={`/branches/${branch.slug}`}
                   fillWidth
                   paddingX="20"
                   paddingY="12"
@@ -190,8 +190,8 @@ export function HomePage() {
         <Column maxWidth={88} gap="32" className="reveal-in delay-3">
           <Row horizontal="between" vertical="end" gap="24" wrap>
             <SectionHeading
-              eyebrow="Events at Bir Ali"
-              title="Enriching experiences throughout the year to develop well-rounded, confident Muslim children."
+              eyebrow={homeSections.events.eyebrow}
+              title={homeSections.events.title}
             />
           </Row>
           <Grid columns="3" gap="16" m={{ columns: 1 }}>
@@ -222,8 +222,8 @@ export function HomePage() {
         <Column maxWidth={88} gap="32" className="reveal-in delay-3">
           <Row horizontal="between" vertical="end" gap="24" wrap>
             <SectionHeading
-              eyebrow="Gallery"
-              title="A darker, calmer view of premium preschool life."
+              eyebrow={homeSections.gallery.eyebrow}
+              title={homeSections.gallery.title}
             />
           </Row>
           <GalleryPreview images={homeGallery} />
@@ -234,16 +234,16 @@ export function HomePage() {
         <Column maxWidth={88} gap="32" className="reveal-in delay-1">
           <Row horizontal="between" vertical="end" gap="24" wrap>
             <SectionHeading
-              eyebrow="Parent voice"
-              title="Trust signals for families making a careful decision."
+              eyebrow={homeSections.testimonials.eyebrow}
+              title={homeSections.testimonials.title}
             />
             <Button href="/testimonials" variant="secondary" className="secondary-cta">
-              Read Testimonials
+              {homeSections.testimonials.ctaLabel}
             </Button>
           </Row>
 
           <Grid columns="3" gap="16" m={{ columns: 1 }}>
-            {testimonials.map((testimonial) => (
+            {featuredTestimonials.map((testimonial) => (
               <Card key={testimonial.name} padding="24" radius="l" className="quote-card">
                 <Column gap="20">
                   <Text as="p" variant="body-default-l">
@@ -265,9 +265,9 @@ export function HomePage() {
       <section className="site-section">
         <Column maxWidth={88} gap="32" className="reveal-in delay-2">
           <Row horizontal="between" vertical="end" gap="24" wrap>
-            <SectionHeading eyebrow="Blog" title="Thoughtful notes for intentional parents." />
+            <SectionHeading eyebrow={homeSections.blog.eyebrow} title={homeSections.blog.title} />
             <Button href="/blog" variant="secondary" className="secondary-cta">
-              Read Blog
+              {homeSections.blog.ctaLabel}
             </Button>
           </Row>
           <Grid columns="3" gap="16" m={{ columns: 1 }}>
@@ -300,7 +300,7 @@ export function HomePage() {
       <section className="site-section">
         <Column maxWidth={88} padding="40" gap="24" className="final-cta reveal-in">
           <Text variant="label-strong-s" className="eyebrow">
-            Admissions
+            {homeSections.admissions.eyebrow}
           </Text>
           <Heading as="h2" variant="display-strong-s" wrap="balance">
             {contact.heading}
@@ -310,16 +310,16 @@ export function HomePage() {
           </Text>
           <Row gap="12" wrap>
             <Button href="/contact" size="l" className="primary-cta" arrowIcon>
-              Contact Admissions
+              {homeSections.admissions.primaryCta}
             </Button>
-            <Button
+            {/* <Button
               href={`mailto:${site.email}`}
               variant="secondary"
               size="l"
               className="secondary-cta"
             >
-              Email Us
-            </Button>
+              {homeSections.admissions.secondaryCta}
+            </Button> */}
           </Row>
         </Column>
       </section>

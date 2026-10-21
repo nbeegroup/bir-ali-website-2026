@@ -1,49 +1,23 @@
-import { Button, Card, Column, Grid, Heading, Media, Row, Text } from "@once-ui-system/core";
+import { Badge, Button, Card, Column, Grid, Heading, Media, Row, Text } from "@once-ui-system/core";
 
 import {
   aboutSections,
+  aboutCurriculum,
+  aboutProgrammes,
+  aboutWhyBirAli,
   blogPosts,
   contact,
   gallery,
+  pageIntro,
   site,
   testimonials,
-} from "@/resources/content";
+} from "@/resources/mockData";
 
+import type { PageKey } from "@/resources/data.types";
+
+import { GalleryGrid } from "./GalleryGrid";
 import { SectionHeading } from "./SectionHeading";
-
-type PageKey = "about" | "gallery" | "testimonials" | "blog" | "contact";
-
-const pageIntro: Record<PageKey, { eyebrow: string; title: string; description: string }> = {
-  about: {
-    eyebrow: "About",
-    title: "A premium preschool identity with a values-first centre.",
-    description:
-      "Placeholder about-page content for Bir Ali Preschool, ready to be replaced with the real school story.",
-  },
-  gallery: {
-    eyebrow: "Gallery",
-    title: "Scenes from a calm, carefully prepared learning world.",
-    description:
-      "Placehold.co imagery stands in for school photography while the structure is finalised.",
-  },
-  testimonials: {
-    eyebrow: "Testimonials",
-    title: "Parent confidence, expressed with clarity and warmth.",
-    description: "Mock parent quotes demonstrate how trust-building content will feel on the site.",
-  },
-  blog: {
-    eyebrow: "Blog",
-    title: "Editorial notes for intentional early-years parenting.",
-    description:
-      "Placeholder article cards for future education, parenting, and Sunnah routine content.",
-  },
-  contact: {
-    eyebrow: "Contact",
-    title: "Begin the admissions conversation.",
-    description:
-      "A polished contact experience for families who want a private visit, programme details, or intake information.",
-  },
-};
+import { TestimonialsDirectory } from "./TestimonialsDirectory";
 
 export function SitePage({ page }: { page: PageKey }) {
   const intro = pageIntro[page];
@@ -75,84 +49,163 @@ export function SitePage({ page }: { page: PageKey }) {
 
 function AboutContent() {
   return (
-    <section className="site-section">
-      <Column maxWidth={88} gap="32">
-        <Grid columns="3" gap="16" m={{ columns: 1 }}>
-          {aboutSections.map((section, index) => (
-            <Column key={section.title} padding="24" gap="16" className="outline-panel reveal-in">
-              <Text variant="label-strong-s" className="panel-kicker">
-                0{index + 1}
-              </Text>
-              <Heading as="h2" variant="heading-strong-m">
-                {section.title}
+    <>
+      <section className="site-section about-story-section">
+        <Column maxWidth={88} gap="32">
+          <Grid columns="3" gap="16" m={{ columns: 1 }}>
+            {aboutSections.map((section, index) => (
+              <Column key={section.title} padding="24" gap="16" className="outline-panel reveal-in">
+                <Text variant="label-strong-s" className="panel-kicker">
+                  0{index + 1}
+                </Text>
+                <Heading as="h2" variant="heading-strong-m">
+                  {section.title}
+                </Heading>
+                <Text as="p" variant="body-default-m" onBackground="neutral-weak">
+                  {section.description}
+                </Text>
+              </Column>
+            ))}
+          </Grid>
+
+          <Row gap="32" s={{ direction: "column" }} className="about-manifesto-panel">
+            <Column flex={5} gap="16">
+              <Badge border="neutral-alpha-medium" background="neutral-alpha-weak">
+                <Text variant="label-strong-s">The Sunnah Preschool</Text>
+              </Badge>
+              <Heading as="h2" variant="display-strong-s">
+                Growing faith, language, character, and curiosity together.
               </Heading>
+            </Column>
+            <Column flex={7} gap="16">
+              <Text as="p" variant="body-default-l" onBackground="neutral-weak">
+                We look forward to making Bir Ali a leading Islamic preschool in Malaysia—one that
+                keeps children connected to their faith, languages, cultures, and strong heritage.
+              </Text>
               <Text as="p" variant="body-default-m" onBackground="neutral-weak">
-                {section.description}
+                The learning environment is designed to help children grow together while still
+                receiving the individual support they need.
               </Text>
             </Column>
-          ))}
-        </Grid>
-        <Column padding="32" gap="16" className="final-cta">
-          <Heading as="h2" variant="display-strong-s">
-            {site.tagline}
-          </Heading>
-          <Text as="p" variant="body-default-l" onBackground="neutral-weak">
-            {site.description} is the guiding placeholder promise for the brand narrative.
-          </Text>
+          </Row>
         </Column>
-      </Column>
-    </section>
+      </section>
+
+      <section className="site-section about-curriculum-section">
+        <Column maxWidth={88} gap="24">
+          <SectionHeading eyebrow="Curriculum" title="A complete foundation for the early years." />
+          <Grid columns="4" gap="16" m={{ columns: 2 }} s={{ columns: 1 }}>
+            {aboutCurriculum.map((area, index) => (
+              <Column
+                key={area.title}
+                padding="24"
+                gap="12"
+                className="about-curriculum-card reveal-in"
+              >
+                <Text variant="label-strong-s" className="panel-kicker">
+                  0{index + 1}
+                </Text>
+                <Heading as="h3" variant="heading-strong-m">
+                  {area.title}
+                </Heading>
+                <Text as="p" variant="body-default-m" onBackground="neutral-weak">
+                  {area.items}
+                </Text>
+              </Column>
+            ))}
+          </Grid>
+        </Column>
+      </section>
+
+      <section className="site-section about-why-section">
+        <Column maxWidth={88} gap="24">
+          <SectionHeading
+            eyebrow="Why Bir Ali"
+            title="The routines behind confident, grounded learners."
+          />
+          <Grid columns="2" gap="16" s={{ columns: 1 }}>
+            {aboutWhyBirAli.map((reason, index) => (
+              <Card key={reason} padding="24" radius="l" className="about-reason-card reveal-in">
+                <Row gap="16" vertical="start">
+                  <Text variant="label-strong-s" className="about-reason-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </Text>
+                  <Text as="p" variant="body-default-l">
+                    {reason}
+                  </Text>
+                </Row>
+              </Card>
+            ))}
+          </Grid>
+        </Column>
+      </section>
+
+      <section className="site-section about-programme-section">
+        <Column maxWidth={88} gap="24">
+          <SectionHeading
+            eyebrow="Our programme"
+            title="Three rhythms for different family needs."
+          />
+          <Grid columns="3" gap="16" m={{ columns: 1 }}>
+            {aboutProgrammes.map((programme, index) => (
+              <Column
+                key={programme.name}
+                padding="24"
+                gap="16"
+                className="about-programme-card reveal-in"
+              >
+                <Text variant="label-strong-s" className="panel-kicker">
+                  0{index + 1}
+                </Text>
+                <Heading as="h3" variant="heading-strong-m">
+                  {programme.name}
+                </Heading>
+                <Text variant="label-strong-s" className="about-programme-schedule">
+                  {programme.schedule}
+                </Text>
+                <Text as="p" variant="body-default-m" onBackground="neutral-weak">
+                  {programme.description}
+                </Text>
+              </Column>
+            ))}
+          </Grid>
+          <Column padding="32" gap="16" className="final-cta">
+            <Heading as="h2" variant="display-strong-s">
+              {site.tagline}
+            </Heading>
+            <Text as="p" variant="body-default-l" onBackground="neutral-weak">
+              A supportive Islamic learning environment for children and families across Malaysia.
+            </Text>
+            <Button href="/contact" variant="secondary" className="secondary-cta">
+              Begin the conversation
+            </Button>
+          </Column>
+        </Column>
+      </section>
+    </>
   );
 }
 
 function GalleryContent() {
   return (
-    <section className="site-section">
+    <section className="site-section gallery-page-section">
       <Column maxWidth={88} gap="32">
-        <Grid columns="3" gap="16" m={{ columns: 1 }}>
-          {gallery.map((item) => (
-            <Card key={item.title} radius="l" overflow="hidden" className="image-card reveal-in">
-              <Media src={item.image} alt={item.title} aspectRatio="4/3" unoptimized />
-              <Column gap="8" padding="20">
-                <Heading as="h2" variant="heading-strong-s">
-                  {item.title}
-                </Heading>
-                <Text as="p" variant="body-default-s" onBackground="neutral-weak">
-                  {item.description}
-                </Text>
-              </Column>
-            </Card>
-          ))}
-        </Grid>
+        <Row horizontal="between" vertical="center" gap="16" wrap>
+          <Text variant="body-default-m" onBackground="neutral-weak">
+            A growing collection of life at Bir Ali.
+          </Text>
+          <Text variant="label-strong-s" className="gallery-image-total">
+            {gallery.length} moments
+          </Text>
+        </Row>
+        <GalleryGrid images={gallery} />
       </Column>
     </section>
   );
 }
 
 function TestimonialsContent() {
-  return (
-    <section className="site-section">
-      <Column maxWidth={88} gap="32">
-        <Grid columns="3" gap="16" m={{ columns: 1 }}>
-          {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} padding="24" radius="l" className="quote-card reveal-in">
-              <Column gap="20">
-                <Text as="p" variant="body-default-l">
-                  "{testimonial.quote}"
-                </Text>
-                <Column gap="4">
-                  <Text variant="label-strong-m">{testimonial.name}</Text>
-                  <Text variant="label-default-s" onBackground="neutral-weak">
-                    {testimonial.role}
-                  </Text>
-                </Column>
-              </Column>
-            </Card>
-          ))}
-        </Grid>
-      </Column>
-    </section>
-  );
+  return <TestimonialsDirectory testimonials={testimonials} />;
 }
 
 function BlogContent() {
@@ -196,24 +249,28 @@ function ContactContent() {
           </Column>
         </Column>
         <Column as="form" flex={4} padding="24" gap="16" className="contact-form reveal-in">
-          <label>
-            Parent name
-            <input type="text" name="name" placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Child age
-            <input type="text" name="age" placeholder="3, 4, 5, or 6" />
-          </label>
-          <label>
-            Message
-            <textarea name="message" placeholder="Tell us what you would like to know" rows={5} />
-          </label>
+          {contact.formFields.map((field) => (
+            <label key={field.name} htmlFor={field.name}>
+              {field.label}
+              {field.multiline ? (
+                <textarea
+                  id={field.name}
+                  name={field.name}
+                  placeholder={field.placeholder}
+                  rows={field.rows}
+                />
+              ) : (
+                <input
+                  id={field.name}
+                  type={field.type}
+                  name={field.name}
+                  placeholder={field.placeholder}
+                />
+              )}
+            </label>
+          ))}
           <Button type="submit" size="l" className="primary-cta">
-            Send Enquiry
+            {contact.submitLabel}
           </Button>
         </Column>
       </Row>
