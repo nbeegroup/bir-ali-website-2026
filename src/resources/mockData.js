@@ -261,7 +261,7 @@ export const events = [
     title: "Khalifah Speech",
     description:
       "Annual festival celebrating oratory excellence where students showcase their talents in public speaking, storytelling, and dramatic performances.",
-    image: "/images/Khalifah Speech 2025 01.jpg",
+    image: "/images/Khalifah Speech 2025 01.JPG",
   },
   {
     title: "Field Trip Adventures",
@@ -292,7 +292,7 @@ export const events = [
 export const branchesSection = {
   title: "Our Branches",
   description: "Serving families around Malaysia with convenient locations near you.",
-  featuredImage: "/images/Taska-Bir-Ali-Junior-Alam-Impian.jpg",
+  featuredImage: "/images/branches/Taska-Bir-Ali-Junior-Alam-Impian.jpg",
   featuredImageAlt: "Featured Branch Image (Bir Ali Junior)",
   viewAllHref: "/branches",
   viewAllLabel: "View All Branches",
