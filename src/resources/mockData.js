@@ -94,6 +94,11 @@ export const redirects = [
     permanent: true,
   },
   {
+    source: "/training-centre",
+    destination: "https://wp.birali.my/training-centre",
+    permanent: true,
+  },
+  {
     source: "/terms-conditions",
     destination: "https://wp.birali.my/terms-conditions",
     permanent: true,
@@ -106,6 +111,21 @@ export const redirects = [
   {
     source: "/refund-policy",
     destination: "https://wp.birali.my/refund-policy",
+    permanent: true,
+  },
+  {
+    source: "/blog",
+    destination: "https://wp.birali.my/blog",
+    permanent: true,
+  },
+  {
+    source: "/bisnes-tadika-di-malaysia-kejar-untung-atau-kejar-trend",
+    destination: "https://wp.birali.my/bisnes-tadika-di-malaysia-kejar-untung-atau-kejar-trend",
+    permanent: true,
+  },
+  {
+    source: "/segmen-tarbiah-bersama-ustazah-isfadiah-mohd-dasuki",
+    destination: "https://wp.birali.my/segmen-tarbiah-bersama-ustazah-isfadiah-mohd-dasuki",
     permanent: true,
   },
 ];
