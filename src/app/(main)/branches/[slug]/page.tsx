@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaThreads, FaTiktok } from "react-icons/fa6";
 import { HiArrowLeft, HiOutlineExternalLink } from "react-icons/hi";
 
-import { BranchImage, BranchMap } from "@/components/site";
+import { BranchGallery, BranchMap, BranchPreviewPhoto } from "@/components/site";
 import type { Branch } from "@/resources/data.types";
 import { branches } from "@/resources/mockData";
 import { createPageMetadata, defaultPreviewPhoto } from "@/resources/seo";
@@ -89,9 +89,10 @@ export default async function BranchPage({ params }: BranchPageProps) {
       <section className="site-section branch-detail-section">
         <Row maxWidth={88} gap="32" vertical="center" className="branch-detail-grid">
           <div className="branch-detail-media reveal-in">
-            <BranchImage
+            <BranchPreviewPhoto
               src={branch.preview_photo}
               alt={`${branch.name} branch`}
+              branchName={branch.name}
               className="branch-detail-image"
             />
           </div>
@@ -165,25 +166,11 @@ export default async function BranchPage({ params }: BranchPageProps) {
           </Column>
 
           {branch.photos.length > 0 ? (
-            <div className="branch-photo-grid">
-              {branch.photos.map((photo, index) => (
-                <figure key={`${photo}-${index}`} className="branch-photo-card reveal-in">
-                  <BranchImage
-                    src={photo}
-                    fallbackSrc={branch.preview_photo}
-                    alt={`${branch.name} gallery photo ${index + 1}`}
-                    className="branch-photo-image"
-                  />
-                  <figcaption>
-                    <span>{branch.name}</span>
-                    <span>
-                      {String(index + 1).padStart(2, "0")} /{" "}
-                      {String(branch.photos.length).padStart(2, "0")}
-                    </span>
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
+            <BranchGallery
+              branchName={branch.name}
+              photos={branch.photos}
+              fallbackSrc={branch.preview_photo}
+            />
           ) : (
             <div className="branch-empty-panel">
               <Text variant="body-default-m">Photos for this branch will be added soon.</Text>

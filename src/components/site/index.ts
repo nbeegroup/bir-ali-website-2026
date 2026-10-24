@@ -1,5 +1,6 @@
 export * from "./BranchImage";
 export * from "./BranchMap";
+export * from "./BranchPhotoViewer";
 export * from "./BranchesDirectory";
 export * from "./GalleryPreview";
 export * from "./GalleryGrid";
