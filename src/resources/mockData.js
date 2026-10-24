@@ -1388,7 +1388,7 @@ export const branches = [
   },
   {
     name: "The Atmosphere",
-    slug: "theatmosphere",
+    slug: "the-atmosphere-seri-kembangan",
     address: "The Atmosphere, Selangor, Malaysia",
     state: "Selangor",
     phone: "017-746 7672",
@@ -1404,7 +1404,7 @@ export const branches = [
   },
   {
     name: "Tropicana Damansara",
-    slug: "td",
+    slug: "tropicana-damansara",
     address: "Tropicana Damansara, Selangor, Malaysia",
     state: "Selangor",
     phone: "011 - 2626 4688",

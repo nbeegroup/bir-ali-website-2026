@@ -226,12 +226,17 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://birali.my/branches/theatmosphere</loc>
+    <loc>https://birali.my/branches/the-atmosphere-seri-kembangan</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://birali.my/branches/ttdi-jaya</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://birali.my/branches/tropicana-damansara</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
