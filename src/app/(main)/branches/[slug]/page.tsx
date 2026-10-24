@@ -9,6 +9,7 @@ import { HiArrowLeft, HiOutlineExternalLink } from "react-icons/hi";
 import { BranchImage, BranchMap } from "@/components/site";
 import type { Branch } from "@/resources/data.types";
 import { branches } from "@/resources/mockData";
+import { createPageMetadata, defaultPreviewPhoto } from "@/resources/seo";
 
 type BranchPageProps = {
   params: Promise<{ slug: string }>;
@@ -34,12 +35,25 @@ export async function generateMetadata({ params }: BranchPageProps): Promise<Met
   const { slug } = await params;
   const branch = branchData.find((item) => item.slug === slug);
 
-  return branch
-    ? {
-        title: `${branch.name} | Bir Ali Preschool`,
-        description: `Visit Bir Ali Preschool ${branch.name} in ${branch.state}.`,
-      }
-    : {};
+  if (!branch) {
+    return {
+      title: "Branch not found",
+      robots: { index: false, follow: false },
+    };
+  }
+
+  return createPageMetadata({
+    title: `Tadika Bir Ali ${branch.name}`,
+    description: `Discover Bir Ali Preschool ${branch.name} in ${branch.state}. View branch photos, contact details, social media, and its Google Maps location.`,
+    path: `/branches/${branch.slug}`,
+    image: branch.preview_photo || defaultPreviewPhoto,
+    keywords: [
+      `Tadika Bir Ali ${branch.name}`,
+      `Islamic preschool ${branch.state}`,
+      `kindergarten ${branch.state}`,
+      `preschool near ${branch.name}`,
+    ],
+  });
 }
 
 export default async function BranchPage({ params }: BranchPageProps) {

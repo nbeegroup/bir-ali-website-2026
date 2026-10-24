@@ -7,21 +7,25 @@ import classNames from "classnames";
 import { Providers } from "@/components/Providers";
 import { SiteShell } from "@/components/site";
 import { dataStyle, fonts, style } from "@/resources/once-ui.config";
-import { baseURL, meta } from "@/resources/seo";
-import { Column, Flex, Meta, Schema, ThemeInit } from "@once-ui-system/core";
+import { baseURL, createPageMetadata, meta, siteName } from "@/resources/seo";
+import { Column, Flex, Schema, ThemeInit } from "@once-ui-system/core";
+import type { Metadata } from "next";
 
-export async function generateMetadata() {
-  return Meta.generate({
-    title: meta.home.title,
-    description: meta.home.description,
-    baseURL: baseURL,
-    path: meta.home.path,
-    canonical: meta.home.canonical,
-    image: meta.home.image,
-    robots: meta.home.robots,
-    alternates: meta.home.alternates,
-  });
-}
+const homeMetadata = createPageMetadata(meta.home);
+
+export const metadata: Metadata = {
+  ...homeMetadata,
+  metadataBase: new URL(baseURL),
+  title: {
+    default: meta.home.title,
+    template: `%s | ${siteName}`,
+  },
+  applicationName: siteName,
+  category: "education",
+  authors: [{ name: siteName, url: baseURL }],
+  creator: siteName,
+  publisher: siteName,
+};
 
 export default function RootLayout({
   children,

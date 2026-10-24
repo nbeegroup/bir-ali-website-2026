@@ -4,11 +4,9 @@ import type { Metadata } from "next";
 import { BranchesDirectory } from "@/components/site";
 import type { Branch } from "@/resources/data.types";
 import { branches } from "@/resources/mockData";
+import { createPageMetadata, meta } from "@/resources/seo";
 
-export const metadata: Metadata = {
-  title: "Our Branches | Bir Ali Preschool",
-  description: "Find a Bir Ali Preschool branch near your family.",
-};
+export const metadata: Metadata = createPageMetadata(meta.branches);
 
 export default function BranchesPage() {
   return (
@@ -19,7 +17,7 @@ export default function BranchesPage() {
             Our branches
           </Text>
           <Heading as="h1" variant="display-strong-l" wrap="balance">
-            Find your nearest Bir Ali Preschool.
+            {meta.branches.title}
           </Heading>
           <Text as="p" variant="heading-default-m" onBackground="neutral-weak" wrap="balance">
             Explore our growing family of branches and choose a location that feels close to home.
