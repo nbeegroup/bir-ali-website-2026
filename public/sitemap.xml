@@ -66,11 +66,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://birali.my/branches/nilai</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://birali.my/branches/bandar-putera-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -101,6 +96,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://birali.my/branches/bukit-beruntung</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://birali.my/branches/bukit-puchong</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -121,6 +121,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://birali.my/branches/kajang</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://birali.my/branches/kuala-selangor</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://birali.my/branches/kinrara</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -136,6 +146,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://birali.my/branches/kota-warisan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://birali.my/branches/kuarters-klia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -147,6 +162,11 @@
   </url>
   <url>
     <loc>https://birali.my/branches/larkin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://birali.my/branches/nilai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
