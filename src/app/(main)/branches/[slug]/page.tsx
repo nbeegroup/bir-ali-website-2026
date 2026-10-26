@@ -111,7 +111,7 @@ export default async function BranchPage({ params }: BranchPageProps) {
             </Column>
             <Row gap="12" wrap>
               <Button
-                href={`https://ads.birali.my/?ba=${encodeURIComponent(branch.slug)}&utm_source=website`}
+                href={`https://ads.birali.my/whatsapp/?ba=${encodeURIComponent(branch.slug)}&utm_source=website`}
                 size="l"
                 className="primary-cta"
               >

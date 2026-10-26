@@ -66,6 +66,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://birali.my/branches/bandar-bukit-raja</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://birali.my/branches/bandar-putera-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -106,12 +111,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://birali.my/branches/bukit-indah</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://birali.my/branches/bukit-puchong</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://birali.my/branches/cybersouth</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://birali.my/branches/dato-keramat</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://birali.my/branches/eco-majestic</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -147,6 +167,11 @@
   </url>
   <url>
     <loc>https://birali.my/branches/kota-damansara</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://birali.my/branches/kota-masai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
