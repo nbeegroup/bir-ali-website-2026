@@ -713,6 +713,9 @@ export const branches = [
     photos: [
       "/images/branches/Tadika Bir Ali Bandar Sri Permaisuri 1.webp",
       "/images/branches/Tadika Bir Ali Bandar Sri Permaisuri 2.webp",
+      "/images/branches/Tadika Bir Ali Bandar Sri Permaisuri 3.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Sri Permaisuri 4.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Sri Permaisuri 5.jpg",
     ],
     year: 2024,
   },
@@ -1299,7 +1302,11 @@ export const branches = [
       { platform: "tiktok", url: "https://www.tiktok.com/@tadikabiralimuar" },
     ],
     preview_photo: "/images/branches/Tadika Bir Ali Pagoh Johor.jpg",
-    photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Pagoh.jpg"],
+    photos: [
+      "/images/branches/Bir-Ali-Whatsapp-Quba-Pagoh.jpg",
+      "/images/branches/Tadika Bir Ali Pagoh 1.jpg",
+      "/images/branches/Tadika Bir Ali Pagoh 2.jpg",
+    ],
     year: 2026,
   },
   {
@@ -1467,13 +1474,14 @@ export const branches = [
     slug: "serenia-city",
     address: "1-2, Amelia Square, Persiaran Aman Serenia, Bandar Serenia, 43900 Sepang, Selangor",
     state: "Selangor",
-    phone: "014-3149093",
+    phone: "014-314 9093",
     social: [
       { platform: "facebook", url: "https://www.facebook.com/p/Tadika-Bir-Ali-Kota-Warisan-Serenia-City-61580438229455" },
       { platform: "instagram", url: "https://www.instagram.com/biralisereniacity" },
       { platform: "threads", url: "https://www.threads.com/@biralisereniacity" },
       { platform: "tiktok", url: "https://www.tiktok.com/@biralisepangdistrict" },
     ],
+    location: "Tadika Bir Ali Serenia City Sepang",
     preview_photo: "/images/branches/Tadika Bir Ali Serenia City.jpg",
     photos: ["/images/branches/Tadika Bir Ali Serenia City 1.webp"],
     year: 2025,
@@ -1497,7 +1505,7 @@ export const branches = [
   {
     name: "Setia Impian",
     slug: "setia-impian",
-    address: "Setia Impian 8, Setia Alam",
+    address: "No. 58, Jalan Setia Impian U13/8A, Setia Alam, Seksyen U13, 40170 Shah Alam, Selangor",
     state: "Selangor",
     phone: "017 - 9292 060",
     social: [
@@ -1506,7 +1514,8 @@ export const branches = [
       { platform: "threads", url: "" },
       { platform: "tiktok", url: "" },
     ],
-    preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
+    location: "No. 58, Jalan Setia Impian U13/8a, Setia Alam",
+    preview_photo: "/images/branches/Tadika Bir Ali Setia Impian Setia Alam.jpg",
     photos: [],
     year: 2027,
   },
