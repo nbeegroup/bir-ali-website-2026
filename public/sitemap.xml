@@ -86,6 +86,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://birali.my/branches/bandar-saujana-putra</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://birali.my/branches/bandar-seri-coalfields</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -157,6 +162,11 @@
   </url>
   <url>
     <loc>https://birali.my/branches/elmina</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://birali.my/branches/gamuda-cove</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
