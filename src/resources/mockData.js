@@ -971,10 +971,10 @@ export const branches = [
     state: "Selangor",
     phone: "018 - 7788 920",
     social: [
-      { platform: "facebook", url: "https://www.facebook.com/biralicybersouth" },
-      { platform: "instagram", url: "https://www.instagram.com/biralicybersouth" },
-      { platform: "threads", url: "https://www.threads.com/@biralicybersouth" },
-      { platform: "tiktok", url: "https://www.tiktok.com/@biralicybersouth" },
+      { platform: "facebook", url: "https://www.facebook.com/bir.ali.454845" },
+      { platform: "instagram", url: "https://www.instagram.com/birali_cybersouth" },
+      { platform: "threads", url: "https://www.threads.com/@birali_cybersouth" },
+      { platform: "tiktok", url: "https://www.tiktok.com/@birali_cybersouth" },
     ],
     preview_photo: "/images/branches/Tadika Bir Ali Cybersouth Dengkil.jpg",
     photos: ["/images/branches/Bir-Ali-Whatsapp-Quba-Cybersouth.png"],
@@ -1073,7 +1073,7 @@ export const branches = [
       { platform: "tiktok", url: "https://www.tiktok.com/@biraligeorgetown" },
     ],
     preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
-    photos: ["/images/branches/Bir-Ali-Default-Branch.jpg"],
+    photos: [],
     year: 2024,
   },
   {
@@ -1331,7 +1331,7 @@ export const branches = [
   {
     name: "Puncak Jalil",
     slug: "puncak-jalil",
-    address: "Puncak Jalil, Selangor, Malaysia",
+    address: "Jalan PUJ 3/3, Puncak Jalil, 43300 Seri Kembangan, Selangor",
     state: "Selangor",
     phone: "017 - 758 7672",
     social: [
@@ -1340,6 +1340,7 @@ export const branches = [
       { platform: "threads", url: "https://www.threads.com/@birali_atmosphere.puncakjalil" },
       { platform: "tiktok", url: "" },
     ],
+    location: "Jalan PUJ 3/3, Puncak Jalil, 43300 Seri Kembangan, Selangor",
     preview_photo: "/images/branches/Tadika Bir Ali Puncak Jalil.jpg",
     photos: [],
     year: 2027,
@@ -1472,7 +1473,7 @@ export const branches = [
   {
     name: "Serenia City",
     slug: "serenia-city",
-    address: "1-2, Amelia Square, Persiaran Aman Serenia, Bandar Serenia, 43900 Sepang, Selangor",
+    address: "No. 1-2, Amelia Square, Persiaran Aman Serenia, Bandar Serenia, 43900 Sepang, Selangor",
     state: "Selangor",
     phone: "014-314 9093",
     social: [
@@ -1522,7 +1523,7 @@ export const branches = [
   {
     name: "Setiawangsa",
     slug: "setiawangsa",
-    address: "Setiawangsa, Kuala Lumpur",
+    address: "No. A-08, Business Suite Setiawangsa, Taman Setiawangsa, 54200 Kuala Lumpur",
     state: "Kuala Lumpur",
     phone: "012 - 2029 324",
     social: [
@@ -1531,8 +1532,9 @@ export const branches = [
       { platform: "threads", url: "https://www.threads.com/@biralisetiawangsa" },
       { platform: "tiktok", url: "" },
     ],
-    preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
-    photos: [],
+    location: "Ayam Gepuk Kriuk Setiawangsa",
+    preview_photo: "/images/branches/Tadika Bir Ali Bandar Setiawangsa.jpg",
+    photos: ["/images/branches/Tadika Bir Ali Bandar Setiawangsa 1.jpg"],
     year: 2027,
   },
   {
