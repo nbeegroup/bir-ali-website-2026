@@ -101,6 +101,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://birali.my/branches/bandar-tasik-puteri</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://birali.my/branches/btho</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
