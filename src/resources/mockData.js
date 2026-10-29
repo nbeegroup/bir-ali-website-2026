@@ -1333,7 +1333,7 @@ export const branches = [
   {
     name: "Puncak Alam",
     slug: "puncak-alam",
-    address: "Puncak Alam, Selangor, Malaysia",
+    address: "No. 6 & 6A, Jalan Niaga Bestari 3, Puncak Bestari, 42300 Puncak Alam, Selangor",
     state: "Selangor",
     phone: "017 - 7757 637",
     social: [
