@@ -1555,9 +1555,10 @@ export const branches = [
     phone: "012 - 2029 324",
     social: [
       { platform: "facebook", url: "" },
-      { platform: "instagram", url: "https://www.instagram.com/biralisetiawangsa" },
+      // { platform: "instagram", url: "https://www.instagram.com/biralisetiawangsa" },
+      { platform: "instagram", url: "https://www.instagram.com/birali.setiawangsa" },
       { platform: "threads", url: "https://www.threads.com/@biralisetiawangsa" },
-      { platform: "tiktok", url: "" },
+      { platform: "tiktok", url: "tiktok.com/@biralisetiawangsa" },
     ],
     location: "Ayam Gepuk Kriuk Setiawangsa",
     preview_photo: "/images/branches/Tadika Bir Ali Bandar Setiawangsa.jpg",
