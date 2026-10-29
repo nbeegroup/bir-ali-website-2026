@@ -115,7 +115,7 @@ export default async function BranchPage({ params }: BranchPageProps) {
                 size="l"
                 className="primary-cta"
               >
-                Contact branch
+                Whatsapp Bir Ali {branch.name}
               </Button>
               {/* <Button href="/branches" variant="secondary" size="l" className="secondary-cta">
                 All branches
