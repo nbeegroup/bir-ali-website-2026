@@ -1565,7 +1565,7 @@ export const branches = [
     state: "Kuala Lumpur",
     phone: "012 - 2029 324",
     social: [
-      { platform: "facebook", url: "" },
+      { platform: "facebook", url: "https://www.facebook.com/profile.php?id=61591866118233" },
       // { platform: "instagram", url: "https://www.instagram.com/biralisetiawangsa" },
       { platform: "instagram", url: "https://www.instagram.com/birali.setiawangsa" },
       { platform: "threads", url: "https://www.threads.com/@biralisetiawangsa" },
@@ -1573,7 +1573,11 @@ export const branches = [
     ],
     location: "Ayam Gepuk Kriuk Setiawangsa",
     preview_photo: "/images/branches/Tadika Bir Ali Bandar Setiawangsa.jpg",
-    photos: ["/images/branches/Tadika Bir Ali Bandar Setiawangsa 1.jpg"],
+    photos: [
+      "/images/branches/Tadika Bir Ali Bandar Setiawangsa 2.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Setiawangsa 3.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Setiawangsa 1.jpg",
+    ],
     year: 2027,
   },
   {
