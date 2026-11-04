@@ -1203,14 +1203,16 @@ export const branches = [
       { platform: "threads", url: "https://www.threads.com/@birali.kualaselangor" },
       { platform: "tiktok", url: "https://www.tiktok.com/@tadika.bir.ali.kua" },
     ],
-    preview_photo: "/images/branches/Tadika Bir Ali Kuala Selangor.jpg",
+    preview_photo: "/images/branches/Tadika Bir Ali Kuala Selangor 7.jpg",
     photos: [
+      "/images/branches/Tadika Bir Ali Kuala Selangor.jpg",
+      "/images/branches/Tadika Bir Ali Kuala Selangor 8.jpg",
       "/images/branches/Tadika Bir Ali Kuala Selangor 1.webp",
       "/images/branches/Tadika Bir Ali Kuala Selangor 2.webp",
       "/images/branches/Tadika Bir Ali Kuala Selangor 3.webp",
       "/images/branches/Tadika Bir Ali Kuala Selangor 4.webp",
       "/images/branches/Tadika Bir Ali Kuala Selangor 5.webp",
-      "/images/branches/Tadika Bir Ali Kuala Selangor 6.webp",
+      // "/images/branches/Tadika Bir Ali Kuala Selangor 6.webp",
     ],
     year: 2024,
   },
@@ -2231,20 +2233,6 @@ export const pageIntro = {
 export const contact = {
   heading: "Start with a private school visit.",
   description:
-    "Share your details and our admissions team will follow up with available visit slots, intake notes, and programme information.",
+    "Book a private visit online to explore our programmes and find the right fit for your family.",
   hours: "Monday-Friday, 8:30 AM-5:30 PM",
-  formFields: [
-    { name: "name", label: "Parent name", type: "text", placeholder: "Your name" },
-    { name: "email", label: "Email", type: "email", placeholder: "you@example.com" },
-    { name: "age", label: "Child age", type: "text", placeholder: "3, 4, 5, or 6" },
-    {
-      name: "message",
-      label: "Message",
-      type: "text",
-      placeholder: "Tell us what you would like to know",
-      multiline: true,
-      rows: 5,
-    },
-  ],
-  submitLabel: "Send Enquiry",
 };

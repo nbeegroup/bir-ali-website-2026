@@ -306,7 +306,7 @@ html {
 .outline-panel,
 .quote-card,
 .image-card,
-.contact-form,
+.contact-booking,
 .final-cta {
   border: 1px solid var(--bir-border) !important;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.24);
@@ -518,7 +518,7 @@ html {
 .stat-card,
 .premium-card,
 .quote-card,
-.contact-form {
+.contact-booking {
   background: var(--bir-panel) !important;
   backdrop-filter: blur(16px);
 }
@@ -1538,31 +1538,6 @@ html {
 
 .gallery-thumbnail.active {
   transform: translateY(-2px);
-}
-
-.contact-form label {
-  display: grid;
-  gap: 8px;
-  color: var(--bir-muted);
-  font-size: 0.9rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 13px 14px;
-  color: var(--bir-soft-white);
-  background: rgba(255, 255, 255, 0.045);
-  border: 1px solid var(--bir-border);
-  border-radius: 12px;
-  outline: none;
-  transition: border-color 180ms ease, box-shadow 180ms ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: rgba(249, 115, 22, 0.72);
-  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.12);
 }
 
 .reveal-in {

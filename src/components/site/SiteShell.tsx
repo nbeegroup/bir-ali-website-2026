@@ -123,7 +123,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           </nav>
 
           <Button
-            href="https://ads.birali.my/?utm_source=website"
+            href="https://ads.birali.my/?utm_content=contact&utm_source=birali.my"
             onClick={handleNavigation}
             size="s"
             className={menuOpen ? "nav-cta open" : "nav-cta"}

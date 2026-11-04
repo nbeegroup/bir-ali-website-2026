@@ -248,29 +248,16 @@ function ContactContent() {
             <Text variant="body-default-m">{contact.hours}</Text>
           </Column>
         </Column>
-        <Column as="form" flex={4} padding="24" gap="16" className="contact-form reveal-in">
-          {contact.formFields.map((field) => (
-            <label key={field.name} htmlFor={field.name}>
-              {field.label}
-              {field.multiline ? (
-                <textarea
-                  id={field.name}
-                  name={field.name}
-                  placeholder={field.placeholder}
-                  rows={field.rows}
-                />
-              ) : (
-                <input
-                  id={field.name}
-                  type={field.type}
-                  name={field.name}
-                  placeholder={field.placeholder}
-                />
-              )}
-            </label>
-          ))}
-          <Button type="submit" size="l" className="primary-cta">
-            {contact.submitLabel}
+        <Column flex={4} padding="24" gap="16" className="contact-booking reveal-in">
+          <Text variant="body-default-m" onBackground="neutral-weak">
+            Book your visit & chat with our team.
+          </Text>
+          <Button
+            href="https://ads.birali.my/whatsapp/?utm_content=contact&utm_source=birali.my"
+            size="l"
+            className="primary-cta"
+          >
+            Book Visit
           </Button>
         </Column>
       </Row>
