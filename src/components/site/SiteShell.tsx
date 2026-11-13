@@ -3,13 +3,15 @@
 import { Button, Column, Row, Text } from "@once-ui-system/core";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { navItems, site } from "@/resources/mockData";
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+  const navigationRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -33,6 +35,32 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
+  useEffect(() => {
+    if (openSubmenu === null) {
+      return;
+    }
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (!navigationRef.current?.contains(event.target as Node)) {
+        setOpenSubmenu(null);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpenSubmenu(null);
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [openSubmenu]);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -42,7 +70,15 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
   const handleNavigation = () => {
     setMenuOpen(false);
+    setOpenSubmenu(null);
     scrollToTop();
+  };
+
+  const toggleMenu = () => {
+    if (menuOpen) {
+      setOpenSubmenu(null);
+    }
+    setMenuOpen((open) => !open);
   };
 
   return (
@@ -93,7 +129,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             aria-label="Toggle navigation menu"
             aria-expanded={menuOpen}
             aria-controls="main-navigation"
-            onClick={() => setMenuOpen((open) => !open)}
+            onClick={toggleMenu}
           >
             <span aria-hidden="true" />
             <span aria-hidden="true" />
@@ -101,25 +137,91 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           </button>
 
           <nav
+            ref={navigationRef}
             id="main-navigation"
             aria-label="Main navigation"
             className={menuOpen ? "nav-links open" : "nav-links"}
           >
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={handleNavigation}
-                className={
-                  pathname === item.href ||
-                  (item.href !== "/" && pathname.startsWith(`${item.href}/`))
-                    ? "nav-link active"
-                    : "nav-link"
-                }
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive =
+                pathname === item.href ||
+                (item.href.startsWith("/") &&
+                  item.href !== "/" &&
+                  pathname.startsWith(`${item.href}/`));
+              const submenuId = `${item.label.toLowerCase().replaceAll(" ", "-")}-submenu`;
+
+              if (item.children) {
+                const isOpen = openSubmenu === item.label;
+
+                return (
+                  <div
+                    key={item.href}
+                    className={
+                      isOpen
+                        ? "nav-item nav-item-with-children open"
+                        : "nav-item nav-item-with-children"
+                    }
+                    onMouseEnter={() => setOpenSubmenu(item.label)}
+                    onMouseLeave={() => setOpenSubmenu(null)}
+                    onBlur={(event) => {
+                      if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                        setOpenSubmenu(null);
+                      }
+                    }}
+                  >
+                    <div className="nav-parent-row">
+                      <Link
+                        href={item.href}
+                        onClick={handleNavigation}
+                        onFocus={() => setOpenSubmenu(item.label)}
+                        className={isActive ? "nav-link active" : "nav-link"}
+                      >
+                        {item.label}
+                      </Link>
+                      <button
+                        type="button"
+                        className="nav-submenu-toggle"
+                        aria-label={`Toggle ${item.label} submenu`}
+                        aria-expanded={isOpen}
+                        aria-controls={submenuId}
+                        onClick={() => setOpenSubmenu(isOpen ? null : item.label)}
+                      >
+                        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                          <path d="m5.5 7.5 4.5 4.5 4.5-4.5" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div
+                      id={submenuId}
+                      className="nav-submenu"
+                      aria-label={`${item.label} submenu`}
+                    >
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          onClick={handleNavigation}
+                          className="nav-submenu-link"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={handleNavigation}
+                  className={isActive ? "nav-link active" : "nav-link"}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           <Button

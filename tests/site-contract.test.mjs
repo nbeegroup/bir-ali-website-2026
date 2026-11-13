@@ -13,7 +13,15 @@ test("mock data resource defines the Bir Ali Preschool brand and required pages"
 
   const content = read(contentPath);
   const requiredCopy = ["Bir Ali Preschool", "The Sunnah Preschool", "Jom Didik Anak Ikut Sunnah"];
-  const requiredPages = ["Home", "About", "Gallery", "Testimonials", "Blog", "Contact"];
+  const requiredPages = [
+    "Home",
+    "About",
+    "Gallery",
+    "Testimonials",
+    "Blog",
+    "Licensing",
+    "Contact",
+  ];
 
   for (const copy of requiredCopy) {
     assert.match(content, new RegExp(copy), `${copy} should be present in content data`);
@@ -22,6 +30,22 @@ test("mock data resource defines the Bir Ali Preschool brand and required pages"
   for (const page of requiredPages) {
     assert.match(content, new RegExp(`label:\\s*"${page}"`), `${page} nav item should exist`);
   }
+
+  assert.match(
+    content,
+    /https:\/\/wp\.birali\.my\/team\/ustaz-muhidin-mokter\//,
+    "About submenu should include Ustaz Muhidin",
+  );
+  assert.match(
+    content,
+    /https:\/\/wp\.birali\.my\/team\/ustazah-isfadiah-mohd-dasuki\//,
+    "About submenu should include Ustazah Isfadiah",
+  );
+  assert.match(
+    content,
+    /https:\/\/wp\.birali\.my\/licensing/,
+    "navigation should include the Licensing page",
+  );
 
   assert.match(content, /https:\/\/placehold\.co\//, "placeholder imagery should use placehold.co");
 });
