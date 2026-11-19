@@ -1096,8 +1096,8 @@ export const branches = [
       { platform: "threads", url: "https://www.threads.com/@birali_gamudacove" },
       { platform: "tiktok", url: "https://www.tiktok.com/@birali_gamudacove" },
     ],
-    preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
-    photos: [],
+    preview_photo: "/images/branches/Tadika Bir Ali Gamuda Cove.jpg",
+    photos: ["/images/branches/Tadika Bir Ali Gamuda Cove 1.jpg"],
     year: 2027,
   },
   {
@@ -1564,17 +1564,18 @@ export const branches = [
   {
     name: "Seri Iskandar",
     slug: "seri-iskandar",
-    address: "Seri Iskandar, Perak",
+    address: "Jalan PP 9, Bandar Universiti, 32610 Seri Iskandar, Perak",
     state: "Perak",
     phone: "011 - 6544 9263",
     social: [
-      { platform: "facebook", url: "" },
+      { platform: "facebook", url: "https://www.facebook.com/profile.php?id=61595207150733" },
       { platform: "instagram", url: "https://www.instagram.com/biraliseriiskandar" },
       { platform: "threads", url: "https://www.threads.com/@biraliseriiskandar" },
       { platform: "tiktok", url: "" },
     ],
-    preview_photo: "/images/branches/Bir-Ali-Default-Branch.jpg",
-    photos: ["/images/branches/Bir-Ali-Default-Branch.jpg"],
+    location: "99 Speedmart 1918 (PK) Bandar Universiti",
+    preview_photo: "/images/branches/Tadika Bir Ali Seri Iskandar.webp",
+    photos: ["/images/branches/Tadika Bir Ali Seri Iskandar 1.jpg"],
     year: 2027,
   },
   {
