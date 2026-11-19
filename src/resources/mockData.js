@@ -1591,8 +1591,8 @@ export const branches = [
       { platform: "tiktok", url: "" },
     ],
     location: "No. 58, Jalan Setia Impian U13/8a, Setia Alam",
-    preview_photo: "/images/branches/Tadika Bir Ali Setia Impian Setia Alam.jpg",
-    photos: [],
+    preview_photo: "/images/branches/Tadika Bir Ali Setia Impian Setia Alam 1.jpg",
+    photos: ["/images/branches/Tadika Bir Ali Setia Impian Setia Alam.jpg"],
     year: 2027,
   },
   {
