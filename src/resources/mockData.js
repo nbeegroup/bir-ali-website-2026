@@ -963,7 +963,7 @@ export const branches = [
       "/images/branches/Tadika Bir Ali Bukit Beruntung 4.jpg",
       "/images/branches/Tadika Bir Ali Bukit Beruntung 5.jpg",
     ],
-    year: 2024,
+    year: 2027,
   },
   {
     name: "Bukit Indah, Ampang",
@@ -1256,9 +1256,9 @@ export const branches = [
   {
     name: "Kuarters KLIA, Bandar Enstek",
     slug: "kuarters-klia",
-    address: "No. 01-01, Pusat Perniagaan Kuarters KLIA, Jalan Pusat Niaga KLIA 3, Taman Memancing Istana Bunian, Bandar Enstek, 71800 Nilai, Negeri Sembilan",
+    address: "No. 01-02, Pusat Perniagaan Kuarters KLIA, Jalan Pusat Niaga KLIA 3, Taman Memancing Istana Bunian, Bandar Enstek, 71800 Nilai, Negeri Sembilan",
     state: "Negeri Sembilan",
-    location: "Nimblebee Kuarters KLIA",
+    location: "Tadika Bir Ali Kuarters KLIA Bandar Enstek Nilai",
     phone: "017 - 772 2990",
     social: [
       { platform: "facebook", url: "http://facebook.com/biralikuartersklia" },
@@ -1275,6 +1275,11 @@ export const branches = [
       "/images/branches/Tadika Bir Ali Kuarters KLIA 5.jpg",
       "/images/branches/Tadika Bir Ali Kuarters KLIA 6.jpg",
       "/images/branches/Tadika Bir Ali Kuarters KLIA 7.jpg",
+      "/images/branches/Tadika Bir Ali Kuarters KLIA 15.jpg",
+      "/images/branches/Tadika Bir Ali Kuarters KLIA 16.jpg",
+      "/images/branches/Tadika Bir Ali Kuarters KLIA 17.jpg",
+      "/images/branches/Tadika Bir Ali Kuarters KLIA 18.jpg",
+      "/images/branches/Tadika Bir Ali Kuarters KLIA 19.jpg",
 
     ],
     year: 2027,
