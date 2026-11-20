@@ -1454,8 +1454,13 @@ export const branches = [
       { platform: "tiktok", url: "https://www.tiktok.com/@birali.saujanautama" },
     ],
     location: "Tadika Bir Ali Saujana Utama Hillpark",
-    preview_photo: "/images/branches/Tadika Bir Ali Saujana Utama.jpg",
-    photos: ["/images/branches/Tadika Bir Ali Saujana Utama 1.jpg"],
+    preview_photo: "/images/branches/Tadika Bir Ali Saujana Utama 4.jpg",
+    photos: [
+      "/images/branches/Tadika Bir Ali Saujana Utama 1.jpg",
+      "/images/branches/Tadika Bir Ali Saujana Utama 2.webp",
+      "/images/branches/Tadika Bir Ali Saujana Utama 3.webp",
+      "/images/branches/Tadika Bir Ali Saujana Utama.jpg",
+    ],
     year: 2025,
   },
   {
