@@ -698,7 +698,17 @@ export const branches = [
       { platform: "tiktok", url: "" },
     ],
     preview_photo: "/images/branches/Tadika Bir Ali Bandar Seri Coalfields.jpg",
-    photos: [],
+    photos: [
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 1.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 2.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 3.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 4.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 5.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 6.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 7.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 8.jpg",
+      "/images/branches/Tadika Bir Ali Bandar Seri Coalfields 9.jpg",
+    ],
     year: 2027,
   },
   {
